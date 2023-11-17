@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAjrQ3xkGzBwEZqi6xvoFsdeP3gz0GCezU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>402175534147</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.vorbind.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>vorbindchat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vorbindchat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:402175534147:ios:8eef229e8b592e61ad60f6</string>
+</dict>
+</plist>
