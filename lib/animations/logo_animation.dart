@@ -66,7 +66,7 @@ class LogoPainter extends CustomPainter {
     path.lineTo(size.width * 0.5, size.height * 0.2);
     path.lineTo(size.width * 0.8, size.height * 0.8);
 
-    final double waveHeight = 20.0;
+    const double waveHeight = 20.0;
 
     final double waveOffset =
         size.height * 0.5 + waveHeight * 0.5 * (1 - animationValue);
