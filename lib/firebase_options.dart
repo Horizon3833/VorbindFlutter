@@ -50,6 +50,7 @@ class DefaultFirebaseOptions {
     projectId: 'vorbindchat',
     authDomain: 'vorbindchat.firebaseapp.com',
     storageBucket: 'vorbindchat.appspot.com',
+    databaseURL: 'https://vorbindchat-default-rtdb.firebaseio.com/',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '402175534147',
     projectId: 'vorbindchat',
     storageBucket: 'vorbindchat.appspot.com',
+    databaseURL: 'https://vorbindchat-default-rtdb.firebaseio.com/',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -67,6 +69,7 @@ class DefaultFirebaseOptions {
     projectId: 'vorbindchat',
     storageBucket: 'vorbindchat.appspot.com',
     iosBundleId: 'com.example.vorbind',
+    databaseURL: 'https://vorbindchat-default-rtdb.firebaseio.com/',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -76,5 +79,6 @@ class DefaultFirebaseOptions {
     projectId: 'vorbindchat',
     storageBucket: 'vorbindchat.appspot.com',
     iosBundleId: 'com.example.vorbind.RunnerTests',
+    databaseURL: 'https://vorbindchat-default-rtdb.firebaseio.com/',
   );
 }

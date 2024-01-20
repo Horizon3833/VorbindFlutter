@@ -1,12 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:vorbind/helpers/custom_colors.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
+void openProfileScreen(BuildContext context){
+  Navigator.pushNamed(context, '/profile');
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CustomColors.darkGrey,
       appBar: AppBar(
-        title: Text('Chats'),
+        title: const Text('Home'),
+        actions: [ TextButton(child: const Icon(Icons.edit), onPressed: () => openProfileScreen(context)), ],
       ),
       body: ListView.builder(
         itemCount: 10, // Replace with the actual number of chats
@@ -17,11 +33,9 @@ class Home extends StatelessWidget {
               child: Text('${index + 1}'),
             ),
             title: Text('Chat ${index + 1}'),
-            subtitle: Text('Last message...'), // Replace with actual last message
-            onTap: () {
-              // Handle chat item tap
-              // Navigate to the chat screen or perform other actions
-            },
+            subtitle:
+                Text('Last message...'), // Replace with actual last message
+            onTap: () {},
           );
         },
       ),
@@ -30,7 +44,7 @@ class Home extends StatelessWidget {
           // Handle floating action button tap
           // Open a new chat or perform other actions
         },
-        child: Icon(Icons.message),
+        child: const Icon(Icons.message),
       ),
     );
   }
